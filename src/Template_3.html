@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jenna – Web Designer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['DM Sans', 'sans-serif'] },
+          colors: {
+            accent: '#c8a96e',
+            'accent-dark': '#a07840',
+            card: '#f0f0ec',
+            muted: '#9a9898',
+          },
+          keyframes: {
+            fadeUp: {
+              '0%':   { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+          },
+          animation: {
+            'fade-up':   'fadeUp 0.6s ease both',
+            'fade-up-2': 'fadeUp 0.6s 0.15s ease both',
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body { background-color: #e5e5e3; }
+    .group:hover .work-img { transform: scale(1.05); }
+    .work-img { transition: transform 0.4s ease; }
+  </style>
+</head>
+<body class="font-sans text-gray-900">
+
+  <!--CONTAINER-->
+  <div class="max-w-[960px] mx-auto my-8 bg-white rounded-2xl overflow-hidden shadow-[0_8px_40px_rgba(0,0,0,0.12)]">
+
+    <!-- ── HEADER ── -->
+    <header class="flex flex-wrap items-center justify-between gap-3 px-4 sm:px-6 md:px-10 py-4 md:py-5 border-b border-gray-100">
+
+      <!-- Social icons -->
+      <div class="flex items-center gap-4">
+        <!-- X / Twitter -->
+        <img src="./images/xlogo.png" alt="X" class="w-7 h-7 rounded-md object-cover" />
+        <!-- YouTube -->
+        <img src="./images/youtube.png" alt="YouTube" class="w-7 h-7 rounded-md object-cover" />
+        <!-- Instagram -->
+        <img src="./images/instagram.png" alt="Instagram" class="w-7 h-7 rounded-md object-cover" />
+      </div>
+
+      <!-- Nav -->
+      <nav class="hidden md:flex gap-x-6">
+        <a href="#" class="text-gray-500 text-sm hover:text-gray-900 transition-colors">About</a>
+        <a href="#" class="text-gray-500 text-sm hover:text-gray-900 transition-colors">Services</a>
+        <a href="#" class="text-gray-500 text-sm hover:text-gray-900 transition-colors">Work</a>
+        <a href="#" class="text-gray-500 text-sm hover:text-gray-900 transition-colors">Testimonial</a>
+        <a href="#" class="text-gray-500 text-sm hover:text-gray-900 transition-colors">Contact</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <button class="flex items-center gap-2 bg-gray-900 hover:bg-gray-700 text-white text-sm font-medium px-4 py-2.5 rounded-lg transition-colors">
+        Remix Template
+        <svg class="w-3.5 h-3.5 fill-white" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+      </button>
+    </header>
+    
+
+    <!-- ── HERO ── -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 px-10 pt-14 pb-10 items-center">
+
+      <div class="animate-fade-up">
+        <p class="text-xs font-semibold uppercase tracking-widest text-accent mb-4">Hello, I'm here ✌️</p>
+        <h1 class="text-3xl font-bold leading-snug mb-1">This is Jenna, A Web Designer</h1>
+        <h1 class="text-3xl font-bold leading-snug text-muted mb-5">with Creative Experience &amp; Years of Experience</h1>
+        <p class="text-sm text-gray-500 leading-7 mb-7 max-w-sm">
+          I'm a passionate web designer with years of experience creating clean, user-friendly designs. Committed to delivering high-quality work that meets each client's unique needs. Let's bring your vision to life — on time.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <button class="bg-gray-900 hover:bg-gray-700 text-white text-sm font-medium px-6 py-2.5 rounded-lg transition-colors">About Me →</button>
+          <button class="border border-gray-300 hover:border-gray-500 text-gray-900 text-sm font-medium px-6 py-2.5 rounded-lg transition-colors bg-transparent">See My Work →</button>
+        </div>
+      </div>
+
+      <div class="animate-fade-up-2">
+        <img src="https://thumb.photo-ac.com/94/9453e7251bddee8d42d63b98dc1c5889_t.jpeg"
+             alt="Jenna – Web Designer"
+             class="w-full h-80 object-top rounded-2xl" />
+      </div>
+    </section>
+
+    <!-- ── SERVICES ── -->
+    <section class="px-10 py-11">
+      <h2 class="text-2xl font-bold text-center mb-1">My Services</h2>
+      <p class="text-sm text-gray-400 text-center mb-8 leading-relaxed">Check Out All Services below then Click the Get<br class="hidden sm:block" />Started Button to Proceed.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 items-start">
+
+        <!-- Left: Service cards -->
+        <div class="flex flex-col gap-3">
+
+          <!-- Card 1 – Web Design (dark) -->
+          <div class="bg-[#2e2e2e] text-[#e0e0dc] rounded-xl overflow-hidden">
+            <div class="flex items-center gap-3 px-5 pt-5 pb-2 text-base font-medium">
+              <div class="w-7 h-7 bg-white/10 rounded-md flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4 fill-[#e0e0dc]" viewBox="0 0 24 24"><path d="M20 3H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h6v2H8v2h8v-2h-2v-2h6a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm0 12H4V5h16v10z"/></svg>
+              </div>
+              Web Design
+            </div>
+            <p class="text-sm text-[#b8b8b4] px-5 pb-3 leading-relaxed">Sleek, modern web design that captivates and engages your audience.</p>
+            <button class="mx-5 mb-5 bg-[#444] hover:bg-[#666] text-[#e0e0dc] text-xs px-4 py-2 rounded-lg transition-colors">Get Started →</button>
+          </div>
+
+          <!-- Card 2 – Logo Design (light) -->
+          <div class="bg-card hover:bg-[#e6e6e2] rounded-xl px-4 py-3.5 flex items-center justify-between transition-colors cursor-default">
+            <div class="flex items-center gap-3">
+              <div class="w-7 h-7 bg-[#ddddd8] rounded-md flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4 fill-gray-600" viewBox="0 0 24 24"><path d="M12 2l9.09 6.26L17.82 19H6.18L2.91 8.26 12 2zm0 2.44L4.91 9.74l2.49 7.26h9.2l2.49-7.26L12 4.44z"/></svg>
+              </div>
+              <span class="text-sm font-medium">Logo Design</span>
+            </div>
+            <span class="text-gray-400 text-sm"></span>
+          </div>
+
+          <!-- Card 3 – Website Maintenance (light) -->
+          <div class="bg-card hover:bg-[#e6e6e2] rounded-xl px-4 py-3.5 flex items-center justify-between transition-colors cursor-default">
+            <div class="flex items-center gap-3">
+              <div class="w-7 h-7 bg-[#ddddd8] rounded-md flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4 fill-gray-600" viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+              </div>
+              <span class="text-sm font-medium">Website Maintenance</span>
+            </div>
+            <span class="text-gray-400 text-sm"></span>
+          </div>
+
+          <!-- Card 4 – Website Hosting (light) -->
+          <div class="bg-card hover:bg-[#e6e6e2] rounded-xl px-4 py-3.5 flex items-center justify-between transition-colors cursor-default">
+            <div class="flex items-center gap-3">
+              <div class="w-7 h-7 bg-[#ddddd8] rounded-md flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4 fill-gray-600" viewBox="0 0 24 24"><path d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+              </div>
+              <span class="text-sm font-medium">Website Hosting</span>
+            </div>
+            <span class="text-gray-400 text-sm"></span>
+          </div>
+        </div>
+
+        <!-- Right: Image -->
+        <div>
+          <img src="https://www.braidandwood.com/cdn/shop/files/modern-wall-mounted-planter-in-dining-room-by-braidandwood.jpg?v=1757625473&width=1100"
+               alt="Services visual"
+               class="w-full h-[370px] object-cover rounded-2xl" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MY WORK ── -->
+    <section class="px-10 py-10">
+      <h2 class="text-2xl font-bold text-center mb-1">My Work</h2>
+      <p class="text-sm text-gray-400 text-center mb-8 leading-relaxed">I've been busy the past few years, working on some of the best<br class="hidden sm:block" />projects. Here's a Glimpse!</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+        <div class="group relative rounded-xl overflow-hidden cursor-pointer">
+          <img src="https://www.emjreviews.com/wp-content/uploads/2026/02/AdobeStock_318813967.jpg" alt="Event Website" class="work-img w-full h-48 object-cover" />
+          <div class="absolute inset-x-0 bottom-0 linear-to-t from-black/70 to-transparent pt-8 pb-3 px-4 text-white text-xs font-medium">Event Website</div>
+        </div>
+
+        <div class="group relative rounded-xl overflow-hidden cursor-pointer">
+          <img src="https://img.freepik.com/free-photo/young-woman-teaching-sign-language_23-2148803726.jpg?semt=ais_user_personalization&w=740&q=80" alt="Membership Website" class="work-img w-full h-48 object-cover" />
+          <div class="absolute inset-x-0 bottom-0 linear-to-t from-black/70 to-transparent pt-8 pb-3 px-4 text-white text-xs font-medium">Membership Website</div>
+        </div>
+
+        <div class="group relative rounded-xl overflow-hidden cursor-pointer">
+          <img src="https://aws.paragonstairs.com/wp-content/uploads/2025/07/02143250/mono-stringer-stair-systems.webp" alt="Portfolio Website" class="work-img w-full h-48 object-cover" />
+          <div class="absolute inset-x-0 bottom-0 linear-to-t from-black/70 to-transparent pt-8 pb-3 px-4 text-white text-xs font-medium">Portfolio Website</div>
+        </div>
+
+        <div class="group relative rounded-xl overflow-hidden cursor-pointer">
+          <img src="https://i.etsystatic.com/20146087/r/il/230ad2/4962340715/il_340x270.4962340715_snp8.jpg" alt="Blog Website" class="work-img w-full h-48 object-cover" />
+          <div class="absolute inset-x-0 bottom-0 linear-to-t from-black/70 to-transparent pt-8 pb-3 px-4 text-white text-xs font-medium">Blog Website</div>
+        </div>
+
+        <div class="group relative rounded-xl overflow-hidden cursor-pointer">
+          <img src="https://osu-wams-blogs-uploads.s3.amazonaws.com/blogs.dir/1284/files/2023/10/McM23_at-00250-scaled.jpg" alt="Ecommerce Website" class="work-img w-full h-48 object-cover" />
+          <div class="absolute inset-x-0 bottom-0 linear-to-t from-black/70 to-transparent pt-8 pb-3 px-4 text-white text-xs font-medium">Ecommerce Website</div>
+        </div>
+
+        <div class="group relative rounded-xl overflow-hidden cursor-pointer">
+          <img src="https://thumbs.dreamstime.com/b/new-plant-sprouting-snow-cold-winter-morning-symbolizing-resilience-beginnings-nature-small-emerges-patch-414262756.jpg" alt="Agency Website" class="work-img w-full h-48 object-cover" />
+          <div class="absolute inset-x-0 bottom-0 linear-to-t from-black/70 to-transparent pt-8 pb-3 px-4 text-white text-xs font-medium">Agency Website</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── HAPPY CLIENTS ── -->
+    <section class="px-10 py-12 bg-[#f4f4f2]">
+      <h2 class="text-2xl font-bold text-center mb-1">Happy Clients</h2>
+      <p class="text-sm text-gray-400 text-center mb-8 leading-relaxed">Here's what my satisfied clients have to say about their amazing<br class="hidden sm:block" />experiences working with me!</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+        <!-- Testimonial 1 -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <div class="flex items-center gap-3 mb-3">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg"
+                 alt="Anna Parker"
+                 class="w-10 h-10 rounded-full object-cover shrink-0" />
+            <div>
+              <p class="text-sm font-semibold">Anna Parker</p>
+              <p class="text-xs text-gray-400">CEO – ABC Co.</p>
+            </div>
+          </div>
+          <div class="text-yellow-400 text-sm tracking-widest mb-3">★★★★★</div>
+          <p class="text-sm text-gray-500 leading-relaxed">Folioz has been a game-changer for my business! The template is sleek, professional, and easy to use. It's the perfect way to showcase my work and impress potential clients.</p>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <div class="flex items-center gap-3 mb-3">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg"
+                 alt="Ariel Zavitz"
+                 class="w-10 h-10 rounded-full object-cover shrink-0" />
+            <div>
+              <p class="text-sm font-semibold">Ariel Zavitz</p>
+              <p class="text-xs text-gray-400">CEO – ABC Co.</p>
+            </div>
+          </div>
+          <div class="text-yellow-400 text-sm tracking-widest mb-3">★★★★★</div>
+          <p class="text-sm text-gray-500 leading-relaxed">I was blown away by the quality of the Folioz template. It's clear that a lot of thought went into the design, and the attention to detail is impressive. Highly recommended!</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section class="px-10 py-14">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+        <!-- Image -->
+        <div class="hidden md:block">
+          <img src="https://www.khmertimeskh.com/wp-content/uploads/2024/02/AIA-1-Main-1.jpg"
+               alt="Work with me"
+               class="w-full h-[460px] object-cover rounded-2xl" />
+        </div>
+
+        <!-- Form -->
+        <div class="bg-[#f4f4f2] rounded-2xl p-8">
+          <h2 class="text-2xl font-bold mb-1">Work With Me!</h2>
+          <p class="text-sm text-gray-400 mb-4">Let's connect and discuss your Web Design project today!</p>
+
+          <!-- Social icons in form -->
+          <div class="flex items-center gap-3 mb-6">
+            <img src="./images/xlogo.png" alt="X" class="w-7 h-7 rounded-md object-cover" />
+            <img src="./images/youtube.png" alt="YouTube" class="w-7 h-7 rounded-md object-cover" />
+            <img src="./images/instagram.png" alt="Instagram" class="w-7 h-7 rounded-md object-cover" />
+          </div>
+
+          <input type="text"    placeholder="Your Name"  class="w-full px-4 py-3 border border-[#e0e0dc] rounded-xl text-sm bg-white outline-none focus:border-gray-900 transition-colors mb-3 font-sans" />
+          <input type="email"   placeholder="Your Email" class="w-full px-4 py-3 border border-[#e0e0dc] rounded-xl text-sm bg-white outline-none focus:border-gray-900 transition-colors mb-3 font-sans" />
+          <textarea             placeholder="Message"    class="w-full px-4 py-3 border border-[#e0e0dc] rounded-xl text-sm bg-white outline-none focus:border-gray-900 transition-colors mb-3 h-24 resize-y font-sans"></textarea>
+          <button class="w-full bg-gray-900 hover:bg-gray-700 text-white font-medium py-3.5 rounded-xl text-sm transition-colors">Send Message</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="text-center py-5 px-10 border-t border-gray-100 text-xs text-gray-400">
+      © 2026 Folioz – Designed by Samar Jamil. Made in Framer
+    </footer>
+  </div>
+</body>
+</html>
