@@ -1,0 +1,66 @@
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 40px;
+  background: #f4f4f4;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+section {
+  padding: 40px;
+}
+
+.skills div {
+  margin: 10px 0;
+}
+
+.progress {
+  background: #ddd;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.progress span {
+  display: block;
+  height: 10px;
+  background: #4caf50;
+  border-radius: 5px;
+}
+
+.projects {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project {
+  flex: 1 1 30%;
+  background: #fafafa;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+form input, form textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+form button {
+  padding: 10px 20px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+} */
